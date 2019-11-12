@@ -1,0 +1,34 @@
+appointments
+  should display an appointment's doctor (FAILED - 1)
+  should display an appointment's patient (FAILED - 2)
+  should display an appointment's date and time (FAILED - 3)
+  should not have an index page (FAILED - 4)
+
+doctors
+  #show page
+    shows all of a doctor's appointment times in a human readable format (FAILED - 5)
+    links to the patient's show page by name for each appointment (FAILED - 6)
+
+patients
+  #index page
+    lists all of the patients and the number of appointments they have (FAILED - 7)
+  #show page
+    shows all of a patient's appointment times in a human readable format (FAILED - 8)
+    links to the doctor's show page by name for the doctor of each appointment (FAILED - 9)
+
+Appointment
+  has a date and time (FAILED - 10)
+  belongs to a patient (FAILED - 11)
+  belongs to a doctor (FAILED - 12)
+
+Doctor
+  has a name (FAILED - 13)
+  has a department (FAILED - 14)
+  has many appointments (FAILED - 15)
+  has many patients, through appointments (FAILED - 16)
+
+Patient
+  has a name (FAILED - 17)
+  has an age (FAILED - 18)
+  has many appointments (FAILED - 19)
+  has many doctors, through appointments (FAILED - 20)
